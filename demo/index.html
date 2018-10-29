@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>acLazyLoadImage.js</title>
+  <meta name="description" content="acLazyLoadImage.js demo page">
+  <meta name="author" content="Tomek -=[Tox]=- tox.ovh">
+
+  <style>
+    .wrapper{
+        width:80%;
+        margin:0 auto;
+    }
+    .wrapper_single{
+        width:100%;
+        padding-top:70%;
+        position:relative;
+        margin-bottom:40px;
+    }
+    .img_lazy{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color:red;
+        background-size:cover;
+        background-position:center center;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <div class='wrapper_single'>
+    <div class="img_lazy" 
+        data-src="https://images.pexels.com/photos/1496516/pexels-photo-1496516.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
+        data-src-small="https://images.pexels.com/photos/1161446/pexels-photo-1161446.jpeg?cs=srgb&dl=backlit-beach-dawn-1161446.jpg&fm=jpg" 
+        data-src-big="https://images.pexels.com/photos/1115734/pexels-photo-1115734.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">          
+    </div>
+    </div>
+    
+    <div class='wrapper_single'>
+    <div class="img_lazy" 
+        data-src="https://images.pexels.com/photos/1095826/pexels-photo-1095826.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
+        data-src-small="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
+        data-src-big="https://images.pexels.com/photos/853411/pexels-photo-853411.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">          
+    </div>
+    </div>
+    
+    <div class='wrapper_single'>
+    <div class="img_lazy" 
+        data-src="https://images.pexels.com/photos/1123491/pexels-photo-1123491.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
+        data-src-small="https://images.pexels.com/photos/1119828/pexels-photo-1119828.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+        data-src-big="https://images.pexels.com/photos/104336/pexels-photo-104336.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">          
+    </div>
+    </div>
+    
+    <div class='wrapper_single'>
+    <div class="img_lazy"
+        data-src="https://images.pexels.com/photos/91216/pexels-photo-91216.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">    
+    </div>
+    </div>
+
+    <div class='wrapper_single'>
+    <img class="img_lazy" 
+        data-src="https://images.pexels.com/photos/80457/south-pole-research-institution-research-station-amundsen-scott-80457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+    </div>
+    
+    <div class='wrapper_single'>
+    <img class="img_lazy" 
+        data-src="https://images.pexels.com/photos/1323440/pexels-photo-1323440.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+    </div>
+    
+        
+    <div class='wrapper_single'>
+    <img class="img_lazy" 
+        data-src="https://images.pexels.com/photos/559768/pexels-photo-559768.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260">
+    </div>
+    <div class='wrapper_single'>
+    <img class="img_lazy" 
+        data-src="https://images.pexels.com/photos/110575/pexels-photo-110575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+    </div>
+    
+</div> 
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="../acLazyLoadImage.js"></script>
+<script>
+    $( document ).ready(function() {
+        $( ".img_lazy" ).ImgLazyLoad(); 
+    }); 
+</script>
+</body>
+</html>

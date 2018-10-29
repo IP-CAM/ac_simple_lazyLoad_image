@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="ac-lazyloadimage.js">AC LazyLoadImage.js</h1>
+<p>Hello, this is my plugin to lazy load image on div and image. I use it to load image for diferent screen resolution.</p>
+<h1 id="how-it-use">how it use</h1>
+<h3 id="js">JS</h3>
+<p>inlude acLazyLoadImage.js file after jquery</p>
+<pre><code>&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="acLazyLoadImage.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>after this execute script</p>
+<pre><code>$( ".img_lazy" ).ImgLazyLoad();
+</code></pre>
+<h3 id="html-tags">html tag’s</h3>
+<p><strong>for one image</strong></p>
+<pre><code>&lt;div class="img_lazy" data-src="ImageUrlHere"&gt;&lt;/div&gt;
+</code></pre>
+<p>data-src attributes is required</p>
+<p><strong>few resources</strong></p>
+<pre><code>&lt;div class="img_lazy" data-src="ImageUrlHere" data-src-small="ImageSmallUrlHere" data-src-big="ImageBigUrlHere"&gt;&lt;/div&gt;
+</code></pre>
+<p><strong>img tag</strong></p>
+<p>you can use on image element</p>
+<pre><code>&lt;img class="img_lazy" data-src="ImageUrlHere"&gt;
+</code></pre>
+<p>or</p>
+<pre><code>&lt;img class="img_lazy" data-src="ImageUrlHere" data-src-small="ImageSmallUrlHere" data-src-big="ImageBigUrlHere"&gt;
+</code></pre>
+<h3 id="options">Options</h3>
+<pre><code>$( ".img_lazy" ).ImgLazyLoad({
+    mobile: "640", 
+    qhd:"1680", 
+    offset:"-150", 
+    time:"250"
+  });
+</code></pre>
+<ul>
+<li>mobile: is maximum width which small image is loaded</li>
+<li>qhd: is minimum width which big image is loaded</li>
+<li>offset: pixels in front of element before plugin load image</li>
+<li>time: interval time which function check visible elements</li>
+</ul>
+<h2 id="licence">Licence</h2>
+<p><strong>MIT</strong> and I will be happy if it will be useful :)</p>
+<p><a href="http://tox.ovh">My homepage</a></p>
+</div>
+</body>
+
+</html>
